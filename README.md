@@ -6,8 +6,8 @@ BiGRU+CRF and IDCNN+CRF for Word Segment
 
 Data format
 
-word1 word2 word3 ...
-more details please see DL+CRF/data/train.txt samples
+1. word1 word2 word3 ...
+2. more details please see DL+CRF/data/train.txt samples
 
 Data preprocess
 1. cd DL+CRF/preprocess
