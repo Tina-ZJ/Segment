@@ -32,7 +32,7 @@ def parser_paramter():
     parser.add_argument("train_path", help="the path of the train file")
     parser.add_argument("dev_path", help="the path of the dev file")
     parser.add_argument("save_path", help="the path of the saved model")
-    parser.add_argument("-model_type", "--model_type", help="the configure of model: bigru or idcnn, the default is bigru", default="idcnn", type=str)
+    parser.add_argument("model_type", help="the configure of model: bigru or idcnn, the default is bigru")
     parser.add_argument("-fine_tune", "--fine_tune", help="whether fine_tune ", default=False)
     parser.add_argument("-vr", "--val_ratio", help="the validation rate, the default is 0.95", default=0.95, type=float)
     parser.add_argument("-e", "--epoch", help="the number of epoch", default=3, type=int)
@@ -56,10 +56,10 @@ def parser_paramter():
     train_path = args.train_path
     dev_path = args.dev_path
     save_path = args.save_path
+    model_type = args.model_type
     fine_tune = args.fine_tune
     num_epochs = args.epoch
     emb_path = args.char_emb
-    model_type = args.model_type
     xpu_config = args.xpu
     learning_rate = args.learning_rate
     emb_dim = args.emb_dim
