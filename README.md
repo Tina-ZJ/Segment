@@ -4,10 +4,9 @@ BiGRU+CRF and IDCNN+CRF for Word Segment
 
 ######################### DL+CRF ###############################
 
-Data format:
+Data format
 
 word1 word2 word3 ...
-
 more details please see DL+CRF/data/train.txt samples
 
 Data preprocess
@@ -17,5 +16,6 @@ Data preprocess
 
 Train model
 1. bash train.sh data/train.out data/dev.out idcnn (or bigru)
+
 Predict
 1. bash predict.sh test.txt test.out 
