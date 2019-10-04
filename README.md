@@ -19,3 +19,16 @@ Train model
 
 Predict
 1. bash predict.sh test.txt test.out 
+
+##################### Entropy #################################
+
+Put your entropy dict in Entropy/model directory
+
+Data format 
+1. word \t left entropy \t right entropy
+2. more details please see model/entropy.dict samples
+
+Main function
+1. /src/main/java/com/jz/tcp/Main_Seg.jave
+2. /src/main/java/com/jz/tcp/Main_Tag.jave
+
